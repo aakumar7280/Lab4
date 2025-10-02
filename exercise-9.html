@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 9</title>
+</head>
+<body>
+    <input type="number" id="numberInput" placeholder="Enter a number" />
+    <button onclick="enter()">Enter</button>
+    <div id="placeholder"></div>
+
+    <script>
+        function enter(){
+            let userInput = document.getElementById("numberInput").value;
+
+            document.getElementById("placeholder").textContent = "Your input number is: "+ userInput;
+        }
+    </script>
+</body>
+</html>
